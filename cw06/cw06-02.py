@@ -18,6 +18,10 @@ except ValueError:
     print('Jedna z wartości nie jest liczbą!')
     sys.exit()
 
+if a == 0:
+    print('To nie jest równanie kwadratowe!')
+    sys.exit()
+
 print('Dla równania kwadratowego o współczynnikach:')
 print(' a = {0}, b = {1}, c = {2}'.format(a, b, c))
 
