@@ -1,15 +1,19 @@
 #!/usr/bin/env python3
-# cw06-02
+# cw07-02
 
 from math import sqrt
 import sys
 
 print('Program obliczający pierwiastki równania kwadratowego.')
 
+if len(sys.argv) < 4:
+    print('Sposób użycia: {} a b c'.format(sys.argv[0]))
+    sys.exit()
+
 try:
-    a = float(input('Podaj a: '))
-    b = float(input('Podaj b: '))
-    c = float(input('Podaj c: '))
+    a = float(sys.argv[1])
+    b = float(sys.argv[2])
+    c = float(sys.argv[3])
 except ValueError:
     print('Jedna z wartości nie jest liczbą!')
     sys.exit()
