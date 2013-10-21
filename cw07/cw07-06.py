@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# cw07-05
+# cw07-06
 
 values = []
 
